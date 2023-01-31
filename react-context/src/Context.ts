@@ -1,8 +1,7 @@
 import { createContext, Dispatch } from "react";
-import { Actions, Product } from "./types";
+import { Actions, CartItem } from "./types";
 
-export const CartContext = createContext<Set<> | null>(null);
+export const CartContext = createContext<CartItem[]>([]);
 export const CartDispatchContext = createContext<Dispatch<Actions> | null>(
   null
 );
-export const ItemsContext = createContext<Product[] | null>(null);
